@@ -1,6 +1,14 @@
 {
-  "name": "new-app",
+  "name": "react-router-redux-boilerplate",
+  "author": "Rane Gridley <ranegri3@gmail.com> (https://github.com/ranebo)",
+  "license" : "MIT",
   "version": "0.1.0",
+  "description": "React boilerplate with React-Router, React-Redux, and more...",
+  "keywords": [],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ranebo/react-router-redux-boilerplate.git"
+  },
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",

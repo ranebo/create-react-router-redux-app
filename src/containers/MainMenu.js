@@ -6,12 +6,14 @@ const links = [
     text: 'Counter',
     props: {
       to: '/counter',
+      exact: true,
     }
   },
   {
     text: 'Todos',
     props: {
       to: '/todos',
+      exact: true,
     }
   }
 ];

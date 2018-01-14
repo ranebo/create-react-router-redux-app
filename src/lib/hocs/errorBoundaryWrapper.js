@@ -1,14 +1,14 @@
 import React from 'react';
 import ErrorBoundary from 'lib/components/ErrorBoundary';
 
-const errorBoundaryWrapper = (Component, ProdErrorComponent, DevErrorComponent) =>
+const DefaultProdErrorComponent = undefined;
+const DefaultDevErrorComponent = undefined;
+
+const errorBoundaryWrapper = (Component, ProdErrorComponent = DefaultProdErrorComponent , DevErrorComponent = DefaultDevErrorComponent) =>
   class ErrorBoundaryWrapperComponent extends React.Component {
     render() {
       // TODO: Make Default ErrorComponents for Prod and Dev
-      // const ErrorComponent = process.env.NODE_ENV === 'development'
-      //   ? (DevErrorComponent || DefaultDevErrorComponent)
-      //   : (ProdErrorComponent || DefaultProdErrorComponent);
-      const ErrorComponent = ProdErrorComponent;
+      const ErrorComponent = process.env.NODE_ENV === 'development' ? /*DevErrorComponent*/ProdErrorComponent : ProdErrorComponent;
       return (
         <ErrorBoundary ErrorComponent={ ErrorComponent }>
           <Component { ...this.props } />

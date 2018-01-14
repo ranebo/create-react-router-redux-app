@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import { increment, decrement } from 'actions';
 import routeWrapper from 'lib/hocs/routeWrapper';
 
-const Counter = ({ count, increment, decrement, history, location, match }) => (
+const Counter = ({ count, increment, decrement }) => (
   <main id="counters-container" className="route-container">
     <section className="fit-center raised lg-pad">
-      <p>Count: { count } </p>
+      <p>Count: { count }</p>
       <div className="fit-center">
         <button onClick={ decrement }> - </button>
         <button onClick={ increment }> + </button>

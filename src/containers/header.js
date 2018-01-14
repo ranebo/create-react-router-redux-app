@@ -5,7 +5,7 @@ import MainMenu from './MainMenu';
 class Header extends PureComponent {
   render() {
     return (
-      <header id="app-header" role="navigation">
+      <header id="app-header" className="raised" role="navigation">
         <nav>
           <div>
             <NavLink

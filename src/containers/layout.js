@@ -9,9 +9,9 @@ const Layout = () => (
   <React.Fragment>
     <Route render={({ location: { pathname } }) => <Header pathname={pathname} />} />
     <Switch>
-      <Route path="/todos" component={ Todos } />
-      <Route path="/counter" component={ Counter } />
-      <Route path="/" component={ Home } />
+      <Route exact path="/todos" component={ Todos } />
+      <Route exact path="/counter" component={ Counter } />
+      <Route exact path="/" component={ Home } />
       <Route component={ Miss404 } />
     </Switch>
   </React.Fragment>

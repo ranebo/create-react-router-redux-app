@@ -14,11 +14,4 @@ const routeWrapper = (Component) =>
     }
   };
 
-
-
-
-
-
-
-
 export default routeWrapper;

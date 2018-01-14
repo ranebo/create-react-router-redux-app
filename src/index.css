@@ -128,26 +128,3 @@ body {
 .pull-left:after, .pull-right:after {
   clear: both;
 }
-
-/*
-#app-header {
-  background-color: #ddd;
-  border-bottom: 1px solid #ccc;
-}
-
-#app-header * {
-  display: inline-block;
-}
-
-#app-header .nav-item {
-  padding: 15px 25px;
-}
-
-#app-header .selected-nav {
-  background-color: white;
-}
-
-#app-header nav {
-  display: block;
-}
-*/

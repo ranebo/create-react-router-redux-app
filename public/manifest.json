@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Router Redux App",
+  "name": "React Router Redux Boilerplate",
   "icons": [
     {
       "src": "favicon.ico",

@@ -1,16 +1,7 @@
-import createReducer from '../createReducer';
-import { Actions } from '../../actions';
+import createReducer from 'reducers/createReducer';
+import { Actions } from 'actions';
 
-// Initial value getter
 const getInitialCount = () => 0;
-
-// Builds Handler Object for each action
-// Handler Object:
-  // paramaters:
-    // state:any - current state value
-    // action:obj - redux action payload
-  // Returns:
-    // newState:any - must return new state
 
 const countHandlers = {
   [Actions.SET_COUNT](state, action) {

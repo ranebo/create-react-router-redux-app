@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable';
-import LoadingPage from '../lib/components/LoadingPage';
+import LoadingPage from 'lib/components/LoadingPage';
 
 const makeAsync = loader => (
  Loadable({

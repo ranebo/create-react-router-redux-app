@@ -1,9 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './header';
-// Routes
-import { Counter, Todos } from '../routes';
-import './container-styles';
+import { Counter, Todos } from 'routes';
+import './styles';
 
 const Layout = () => (
   <React.Fragment>

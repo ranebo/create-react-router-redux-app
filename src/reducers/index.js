@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { count } from './all/counterReducer';
-import { user } from './all/userReducer';
+import { todos } from './all/todosReducer';
 import { routerReducer } from 'react-router-redux'
 
 const appReducer = combineReducers({
   count,
-  user,
+  todos,
   routing: routerReducer
 });
 

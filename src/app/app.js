@@ -1,6 +1,6 @@
 import React from 'react';
 import DevTools from './devTools';
-import Layout from '../containers/layout';
+import Layout from 'containers/layout';
 
 const setEnvTools = (AppComponent) => {
   if (process.env.NODE_ENV === 'development') {

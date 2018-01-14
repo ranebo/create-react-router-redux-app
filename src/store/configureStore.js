@@ -5,6 +5,7 @@ import api from 'middleware/api'
 import rootReducer from 'reducers'
 import DevTools from 'app/DevTools'
 import { historyMiddleware } from 'app/history';
+import { persistStore } from 'redux-persist';
 
 const configureStore = preloadedState => {
 
@@ -40,6 +41,7 @@ const configureStore = preloadedState => {
 
   // Create Store
   const store = createStore(...storeArgs);
+  const persistor = persistStore(store);
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers
@@ -48,7 +50,7 @@ const configureStore = preloadedState => {
     })
   }
 
-  return store
+  return { persistor, store };
 }
 
 export default configureStore

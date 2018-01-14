@@ -1,9 +1,16 @@
-import { combineReducers } from 'redux';
+import { persistCombineReducers } from 'redux-persist';
 import { count } from './all/counterReducer';
 import { todos } from './all/todosReducer';
+import localForage from 'localforage';
 import { routerReducer } from 'react-router-redux'
 
-const appReducer = combineReducers({
+const persistConfig = {
+  key: 'app',
+  storage: localForage,
+  blacklist: ['routing'],
+};
+
+const appReducer = persistCombineReducers(persistConfig, {
   count,
   todos,
   routing: routerReducer

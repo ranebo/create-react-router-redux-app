@@ -51,7 +51,7 @@ class Header extends PureComponent {
                 <NavLink
                   key={ text }
                   className="nav-item"
-                  activeClassName="selected-nav"
+                  activeClassName="active-nav-item"
                   { ...props }
                 >
                   { text }

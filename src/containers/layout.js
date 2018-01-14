@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from './header';
+import Header from './Header';
 import { Counter, Todos } from 'routes';
-import Miss404 from './miss404';
+import Miss404 from './Miss404';
 import './styles';
 
 const Layout = () => (
@@ -11,7 +11,7 @@ const Layout = () => (
     <Switch>
       <Route path="/todos" component={ Todos } />
       <Route path="/counter" component={ Counter } />
-      <Route path="/*" component={ Miss404 } />
+      <Route component={ Miss404 } />
     </Switch>
   </React.Fragment>
 );

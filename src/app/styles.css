@@ -1,5 +1,18 @@
 
 /* App Styles */
+/* ========== */
+
+/* Appearance */
+.raised {
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+
+/* For Mouse */
+.clickable {
+  cursor: pointer!important;
+}
+
+/* Positioning */
 .pull-right {
   float: right;
 }
@@ -12,22 +25,7 @@
   clear: both;
 }
 
-.route-container {
-  padding: 20px;
-  width: 100%;
-}
-
-.text-center {
-  text-align: center!important;
-}
-
-.clickable {
-  cursor: pointer!important;
-}
-
-.raised {
-  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-}
+/* Spacing */
 
 .lg-pad {
   padding: 20px;
@@ -41,7 +39,25 @@
   padding: 5px;
 }
 
+.lg-marg {
+  margin: 20px;
+}
+
+.md-marg {
+  margin: 10px;
+}
+
+.sm-marg {
+  margin: 5px;
+}
+
+/* Centering */
+
 .fit-center {
   width: max-content;
   margin: auto;
+}
+
+.text-center {
+  text-align: center!important;
 }

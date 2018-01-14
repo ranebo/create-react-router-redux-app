@@ -1,3 +1,11 @@
+
+/* General */
+
+.route-container {
+  padding: 20px;
+  width: 100%;
+}
+
 /* Miss 404 */
 
 #missing-404 {
@@ -7,7 +15,6 @@
 
 #app-header {
   background-color: #ddd;
-  border-bottom: 1px solid #ccc;
 }
 
 #app-header * {
@@ -18,7 +25,7 @@
   padding: 15px 25px;
 }
 
-#app-header .selected-nav {
+#app-header .active-nav-item {
   background-color: white;
 }
 

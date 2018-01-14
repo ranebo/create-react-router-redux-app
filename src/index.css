@@ -115,16 +115,3 @@ input, select {
 body {
   font-family: sans-serif;
 }
-
-/* App Styles */
-.pull-right {
-  float: right;
-}
-
-.pull-left {
-  float: left;
-}
-
-.pull-left:after, .pull-right:after {
-  clear: both;
-}

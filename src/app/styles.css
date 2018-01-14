@@ -1,0 +1,47 @@
+
+/* App Styles */
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-left:after, .pull-right:after {
+  clear: both;
+}
+
+.route-container {
+  padding: 20px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center!important;
+}
+
+.clickable {
+  cursor: pointer!important;
+}
+
+.raised {
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+
+.lg-pad {
+  padding: 20px;
+}
+
+.md-pad {
+  padding: 10px;
+}
+
+.sm-pad {
+  padding: 5px;
+}
+
+.fit-center {
+  width: max-content;
+  margin: auto;
+}

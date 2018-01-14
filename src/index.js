@@ -6,14 +6,15 @@ import registerServiceWorker from './registerServiceWorker';
 
 const rootEl = document.getElementById('root');
 
-ReactDOM.render(<Application />, rootEl);
+const render = Component => {
+  ReactDOM.render(<Component />, rootEl);
+}
+
+render(Application);
 registerServiceWorker();
 
 if (module.hot) {
   module.hot.accept('./app', () => {
-    ReactDOM.render(
-      <Application />,
-      rootEl
-    );
+    render(Application);
   });
 }

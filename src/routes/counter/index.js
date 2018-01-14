@@ -3,11 +3,15 @@ import { connect } from 'react-redux';
 import { increment, decrement } from 'actions';
 
 const Counter = ({ count, increment, decrement}) => (
-  <div className="app">
-    <p>Count: { count } </p>
-    <button onClick={ decrement }> - </button>
-    <button onClick={ increment }> + </button>
-  </div>
+  <main id="counters" className="route-container">
+    <section className="fit-center raised lg-pad">
+      <p>Count: { count } </p>
+      <div className="fit-center">
+        <button onClick={ decrement }> - </button>
+        <button onClick={ increment }> + </button>
+      </div>
+    </section>
+  </main>
 );
 
 const mapStateToProps = (state/* , ownProps */) => ({

@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './header';
 import { Counter, Todos } from 'routes';
+import Miss404 from './miss404';
 import './styles';
 
 const Layout = () => (
@@ -10,7 +11,7 @@ const Layout = () => (
     <Switch>
       <Route path="/todos" component={ Todos } />
       <Route path="/counter" component={ Counter } />
-      <Route path="/*" component={ () => <p>404 Not Found</p> } />
+      <Route path="/*" component={ Miss404 } />
     </Switch>
   </React.Fragment>
 );

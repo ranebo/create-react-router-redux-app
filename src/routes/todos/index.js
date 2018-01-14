@@ -1,15 +1,13 @@
 import React from 'react';
-import RouteView from 'containers/RouteView';
+import routeWrapper from 'lib/hocs/routeWrapper';
 
 const Todos = ({ history, location, match }) => (
-  <RouteView history={ history } location={ location } match={ match }>
-    <main id="todos-container" className="route-container">
-      <section className="fit-center raised lg-pad text-center">
-        <p>Hello World </p>
-        <button onClick={ () => history.push('/counter') }>To Counter</button>
-      </section>
-    </main>
-  </RouteView>
+  <main id="todos-container" className="route-container">
+    <section className="fit-center raised lg-pad text-center">
+      <p>Hello World </p>
+      <button onClick={ () => history.push('/counter') }>To Counter</button>
+    </section>
+  </main>
 );
 
-export default Todos
+export default routeWrapper(Todos);

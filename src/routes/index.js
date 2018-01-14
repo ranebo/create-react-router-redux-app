@@ -10,5 +10,7 @@ const makeAsync = loader => (
   })
 );
 
-export const Counter = makeAsync(() => import('./counter'));
-export const Todos = makeAsync(() => import('./todos'))
+// Make async components with webpack chunk names
+export const Home = makeAsync(() => import(/* webpackChunkName: "route-home" */ './home'));
+export const Counter = makeAsync(() => import(/* webpackChunkName: "route-counter" */ './counter'));
+export const Todos = makeAsync(() => import(/* webpackChunkName: "route-todos" */ './todos'));

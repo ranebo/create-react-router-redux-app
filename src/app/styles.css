@@ -61,3 +61,13 @@
 .text-center {
   text-align: center!important;
 }
+
+/* Errors */
+.error-text {
+  color: red;
+}
+
+.error-background {
+  background-color: red;
+  color: white;
+}

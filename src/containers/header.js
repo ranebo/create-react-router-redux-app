@@ -1,35 +1,8 @@
 import React, { PureComponent } from 'react';
 import { NavLink } from 'react-router-dom';
+import MainMenu from './MainMenu';
 
 class Header extends PureComponent {
-  state = {
-
-  };
-
-  links = [
-    {
-      text: 'Counter',
-      props: {
-        to: '/counter',
-      }
-    },
-    {
-      text: 'Todos',
-      props: {
-        to: '/todos',
-      }
-    }
-  ]
-
-  componentDidMount() {
-  }
-
-  componentWillUnmount() {
-  }
-
-  componentDidUpdate(prevProps) {
-  };
-
   render() {
     return (
       <header id="app-header" role="navigation">
@@ -39,26 +12,13 @@ class Header extends PureComponent {
               exact
               to="/"
               className="nav-item"
-              activeClassName="selected-nav"
+              activeClassName="active-nav-item"
             >
               Home
             </NavLink>
           </div>
           <div className="pull-right">
-
-            <div className="">
-              { this.links.map(({ text, props }) =>
-                <NavLink
-                  key={ text }
-                  className="nav-item"
-                  activeClassName="active-nav-item"
-                  { ...props }
-                >
-                  { text }
-                </NavLink>
-              ) }
-            </div>
-
+            <MainMenu />
           </div>
         </nav>
       </header>

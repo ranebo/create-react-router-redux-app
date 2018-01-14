@@ -14,7 +14,7 @@ render(Application);
 registerServiceWorker();
 
 if (module.hot) {
-  module.hot.accept('./app', () => {
+  module.hot.accept('app', () => {
     render(Application);
   });
 }

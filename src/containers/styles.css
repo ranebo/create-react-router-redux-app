@@ -4,6 +4,8 @@
 .route-container {
   padding: 20px;
   width: 100%;
+  /*header height*/
+  margin-top: 50px;
 }
 
 /* Miss 404 */
@@ -14,7 +16,11 @@
 /* Header */
 
 #app-header {
+  width: 100%;
   background-color: #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #app-header * {

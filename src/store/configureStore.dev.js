@@ -3,7 +3,7 @@ import thunk from 'redux-thunk'
 import { createLogger } from 'redux-logger'
 import api from 'middleware/api'
 import rootReducer from 'reducers'
-import DevTools from 'app/devTools'
+import DevTools from 'app/DevTools'
 import { historyMiddleware } from 'app/history';
 
 const configureStore = preloadedState => {

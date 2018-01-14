@@ -1,13 +1,18 @@
 import React from 'react';
-import routeWrapper from 'lib/hocs/routeWrapper';
+import routeWrapper from 'routes/routeWrapper';
+import TodosControls from 'routes/Todos/containers/TodosControls';
+import TodosContainer from 'routes/Todos/containers/TodosContainer';
+import './styles';
 
-const Todos = ({ history, location, match }) => (
-  <main id="todos-container" className="route-container">
-    <section className="fit-center raised lg-pad text-center">
-      <p>Hello World </p>
-      <button onClick={ () => history.push('/counter') }>To Counter</button>
-    </section>
-  </main>
-);
+class TodosLayout extends React.Component {
+  render() {
+    return (
+      <main id="todos-container" className="route-container">
+        <TodosControls />
+        <TodosContainer />
+      </main>
+    );
+  }
+};
 
-export default routeWrapper(Todos);
+export default routeWrapper(TodosLayout);

@@ -1,6 +1,6 @@
 import React from 'react';
 import errorBoundaryWrapper from 'lib/hocs/errorBoundaryWrapper';
-import RouteError from 'lib/components/RouteError';
+import RouteError from 'routes/RouteError';
 
 const routeWrapper = (Component) =>
   class RouteWrapperComponent extends React.Component {

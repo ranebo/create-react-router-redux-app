@@ -1,18 +1,20 @@
 import { persistCombineReducers } from 'redux-persist';
 import { count } from './all/counterReducer';
 import { todos } from './all/todosReducer';
+import { todoFilter } from './all/todoFilterReducer';
 import localForage from 'localforage';
 import { routerReducer } from 'react-router-redux'
 
 const persistConfig = {
   key: 'app',
   storage: localForage,
-  blacklist: ['routing'],
+  blacklist: ['routing'], // Add then Blacklist globalRequestObjects (for aborting request)
 };
 
 const appReducer = persistCombineReducers(persistConfig, {
   count,
   todos,
+  todoFilter,
   routing: routerReducer
 });
 

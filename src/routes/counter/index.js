@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { increment, decrement } from 'actions';
-import routeWrapper from 'lib/hocs/routeWrapper';
+import routeWrapper from 'routes/routeWrapper';
 
 const Counter = ({ count, increment, decrement }) => (
   <main id="counters-container" className="route-container">

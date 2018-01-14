@@ -14,6 +14,6 @@ const makeAsync = loader => (
 // Make async components with webpack chunk names
 // so webpack can statically analyze each route by its name
 // instead of dynamically generated ids
-export const Home = makeAsync(() => import(/* webpackChunkName: "route-home" */ './home'));
-export const Counter = makeAsync(() => import(/* webpackChunkName: "route-counter" */ './counter'));
-export const Todos = makeAsync(() => import(/* webpackChunkName: "route-todos" */ './todos'));
+export const Home = makeAsync(() => import(/* webpackChunkName: "route-home" */ './Home'));
+export const Counter = makeAsync(() => import(/* webpackChunkName: "route-counter" */ './Counter'));
+export const Todos = makeAsync(() => import(/* webpackChunkName: "route-todos" */ './Todos'));

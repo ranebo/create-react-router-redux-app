@@ -12,6 +12,11 @@
   cursor: pointer!important;
 }
 
+/* Dimensions */
+.expand {
+  width: 100%!important;
+}
+
 /* Positioning */
 .pull-right {
   float: right;

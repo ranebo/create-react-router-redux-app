@@ -41,6 +41,8 @@ const configureStore = preloadedState => {
 
   // Create Store
   const store = createStore(...storeArgs);
+
+  // Persist Store
   const persistor = persistStore(store);
 
   if (module.hot) {

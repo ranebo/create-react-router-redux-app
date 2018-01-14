@@ -1,10 +1,12 @@
 import React from 'react';
-import routeWrapper from 'lib/hocs/routeWrapper';
+import routeWrapper from 'routes/routeWrapper';
 
-const Home = (props) => (
+const Home = ({ history }) => (
   <main id="home-container" className="route-container">
     <section className="fit-center raised lg-pad text-center">
-      { [...Array(200).keys()].map( i => <p key={ i }>thing {i}</p>) }
+      <p>Hello World </p>
+      <button onClick={ () => history.push('/counter') }>To Counter</button>
+      <button onClick={ () => history.push('/todos') }>To Todos</button>
     </section>
   </main>
 );

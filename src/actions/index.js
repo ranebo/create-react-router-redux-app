@@ -1,3 +1,5 @@
+import { DEFAULT_TODO_FILTER } from 'routes/Todos/constants';
+
 export const Actions = {
   SET_COUNT: 'SET_COUNT',
   INCREMENT: 'INCREMENT',
@@ -6,6 +8,7 @@ export const Actions = {
   ADD_TODO: 'ADD_TODO',
   UPDATE_TODO: 'UPDATE_TODO',
   REMOVE_TODO: 'REMOVE_TODO',
+  SET_TODO_FILTER: 'SET_TODO_FILTER',
 };
 
 // Thunk Sources
@@ -33,3 +36,4 @@ export const setTodos = setAction(Actions.SET_TODOS, []);
 export const addTodo = setAction(Actions.ADD_TODO, {});
 export const updateTodo = setAction(Actions.UPDATE_TODO);
 export const removeTodo = setAction(Actions.REMOVE_TODO);
+export const setTodoFilter = setAction(Actions.SET_TODO_FILTER, DEFAULT_TODO_FILTER);

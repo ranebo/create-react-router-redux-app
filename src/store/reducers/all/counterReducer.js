@@ -1,5 +1,5 @@
-import createReducer from 'reducers/createReducer';
-import { Actions } from 'actions';
+import createReducer from 'store/reducers/createReducer';
+import { Actions } from 'store/actions';
 
 const getInitialCount = () => 0;
 

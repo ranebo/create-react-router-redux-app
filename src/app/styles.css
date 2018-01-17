@@ -76,3 +76,14 @@
   background-color: red;
   color: white;
 }
+
+/* Interactive */
+.main-btn, .main-btn-active {
+  margin: 10px;
+  outline: none;
+  border-radius: 4px
+}
+
+.main-btn-active {
+  background-color: lightblue;
+}

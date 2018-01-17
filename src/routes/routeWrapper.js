@@ -2,7 +2,7 @@ import React from 'react';
 import errorBoundaryWrapper from 'lib/hocs/errorBoundaryWrapper';
 import RouteError from 'routes/RouteError';
 
-const routeWrapper = (Component) =>
+const routeWrapper = (Component, id) =>
   class RouteWrapperComponent extends React.Component {
     // Do stuff with component lifecycle hooks here
     // Route hit analytics
@@ -10,7 +10,11 @@ const routeWrapper = (Component) =>
     // examples: https://github.com/LWJGL/lwjgl3-www/blob/master/client/containers/PageView.jsx
     render() {
       const RouteComponent = errorBoundaryWrapper(Component, RouteError);
-      return <RouteComponent { ...this.props } />
+      return (
+        <main id={ `${ id }-container` } className="route-container">
+          <RouteComponent { ...this.props } />
+        </main>
+      )
     }
   };
 

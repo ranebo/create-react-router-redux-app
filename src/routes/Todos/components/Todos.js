@@ -5,7 +5,7 @@ const Todos = ({ todos }) => (
   <section className="fit-center text-center expand">
     <HiddenScrollBarList
       components={ todos }
-      height='500px'
+      height='400px'
       width='100%'
       outerClasses="fit-center"
     />

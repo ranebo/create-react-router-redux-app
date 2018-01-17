@@ -1,6 +1,6 @@
-import createReducer from 'reducers/createReducer';
+import createReducer from 'store/reducers/createReducer';
 import { DEFAULT_TODO_FILTER } from 'routes/Todos/constants';
-import { Actions } from 'actions';
+import { Actions } from 'store/actions';
 
 const getInitialTodoFilter = () => DEFAULT_TODO_FILTER;
 

@@ -19,7 +19,7 @@ const Application = () => (
   <AppContainer>
     <Provider store={ store }>
       <PersistGate
-        loading= {<LoadingPage /> }
+        loading={ <LoadingPage /> }
         onBeforeLift={ onBeforeLift }
         persistor={ persistor }>
         <ConnectedRouter history={ history }>

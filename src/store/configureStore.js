@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware, compose } from 'redux'
-import thunk from 'redux-thunk'
+import { persistStore } from 'redux-persist';
 import { createLogger } from 'redux-logger'
-import api from 'middleware/api'
+import thunk from 'redux-thunk'
+import { historyMiddleware } from 'app/history';
 import rootReducer from 'store/reducers'
 import DevTools from 'app/DevTools'
-import { historyMiddleware } from 'app/history';
-import { persistStore } from 'redux-persist';
+import api from 'middleware/api'
 
 // Helper function to compile store args:
 // createStore(rootReducer, preloadedState, compose(applyMiddleware(middleware1, middlware2, ...middlewareDev), ...composeDev));

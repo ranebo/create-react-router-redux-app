@@ -10,7 +10,7 @@ const errorBoundaryWrapper = (Component, ProdErrorComponent = DefaultProdErrorCo
       // TODO: Make Default ErrorComponents for Prod and Dev
       const ErrorComponent = process.env.NODE_ENV === 'development' ? /*DevErrorComponent*/ProdErrorComponent : ProdErrorComponent;
       return (
-        <ErrorBoundary ErrorComponent={ ErrorComponent }>
+        <ErrorBoundary ErrorComponent={ ErrorComponent } { ...this.props }>
           <Component { ...this.props } />
         </ErrorBoundary>
       );

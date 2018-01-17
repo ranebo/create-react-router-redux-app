@@ -1,9 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Header from './Header';
-import { Counter, Todos, Home } from 'routes';
-import Miss404 from './Miss404';
-import './styles';
+import Header from 'app/containers/Header';
+import { Counter, Todos, Home } from 'app/routes';
+import Miss404 from 'app/routes/Miss404';
 
 const Layout = () => (
   <React.Fragment>

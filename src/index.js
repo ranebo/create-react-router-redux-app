@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles';
 import Application from 'app';
 import registerServiceWorker from './registerServiceWorker';
+import './base-styles';
 
 const rootEl = document.getElementById('root');
 

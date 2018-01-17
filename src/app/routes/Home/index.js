@@ -1,5 +1,5 @@
 import React from 'react';
-import routeWrapper from 'routes/routeWrapper';
+import routeWrapper from 'app/routes/routeWrapper';
 
 const Home = ({ history }) => (
   <section className="fit-center raised lg-pad text-center">

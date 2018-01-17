@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { increment, decrement } from 'store/actions';
-import routeWrapper from 'routes/routeWrapper';
+import routeWrapper from 'app/routes/routeWrapper';
 
 const Counter = ({ count, increment, decrement }) => (
   <section className="fit-center raised lg-pad">

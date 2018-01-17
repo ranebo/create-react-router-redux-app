@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import MainMenu from './MainMenu';
+import MainMenu from 'app/containers/MainMenu';
 
 class Header extends React.PureComponent {
   render() {

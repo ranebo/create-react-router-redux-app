@@ -5,7 +5,7 @@ import thunk from 'redux-thunk'
 import { historyMiddleware } from 'app/history';
 import rootReducer from 'store/reducers'
 import DevTools from 'app/DevTools'
-import api from 'middleware/api'
+import api from 'store/middleware/api'
 
 // Helper function to compile store args:
 // createStore(rootReducer, preloadedState, compose(applyMiddleware(middleware1, middlware2, ...middlewareDev), ...composeDev));

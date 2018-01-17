@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { updateTodo, removeTodo } from 'store/actions';
-import Todos from 'routes/Todos/components/Todos';
-import Todo from 'routes/Todos/components/Todo';
-import { TODO_STATUSES } from 'routes/Todos/constants';
+import Todos from 'app/routes/Todos/components/Todos';
+import Todo from 'app/routes/Todos/components/Todo';
+import { TODO_STATUSES } from 'app/routes/Todos/constants';
 
 class TodosContainer extends React.Component {
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import DevTools from './DevTools';
-import Layout from 'containers/Layout';
+import DevTools from 'app/DevTools';
+import Layout from 'app/containers/Layout';
 import './styles';
 
 const setEnvTools = (AppComponent) => {

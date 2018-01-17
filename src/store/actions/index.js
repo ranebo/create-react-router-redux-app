@@ -1,4 +1,4 @@
-import { DEFAULT_TODO_FILTER } from 'routes/Todos/constants';
+import { DEFAULT_TODO_FILTER } from 'app/routes/Todos/constants';
 
 export const Actions = {
   SET_COUNT: 'SET_COUNT',

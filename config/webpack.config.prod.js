@@ -91,10 +91,7 @@ module.exports = {
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx', '.css', '.sass', '.scss'],
     alias: {
       app: path.resolve(paths.appSrc, 'app'),
-      containers: path.resolve(paths.appSrc, 'containers'),
       lib: path.resolve(paths.appSrc, 'lib'),
-      middleware: path.resolve(paths.appSrc, 'middleware'),
-      routes: path.resolve(paths.appSrc, 'routes'),
       store: path.resolve(paths.appSrc, 'store'),
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/

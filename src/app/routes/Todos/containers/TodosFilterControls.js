@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setTodoFilter } from 'store/actions';
-import { TODO_FILTER_OPTIONS } from 'routes/Todos/constants';
+import { TODO_FILTER_OPTIONS } from 'app/routes/Todos/constants';
 
 class TodosFilterControlsContainer extends React.Component {
 

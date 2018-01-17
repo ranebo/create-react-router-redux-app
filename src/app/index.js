@@ -1,13 +1,13 @@
 import React from 'react';
-import { AppContainer } from 'react-hot-loader'
 import { Provider } from 'react-redux';
+import { AppContainer } from 'react-hot-loader'
 import { ConnectedRouter } from 'react-router-redux';
 import { PersistGate } from 'redux-persist/es/integration/react';
-import LoadingPage from 'lib/components/LoadingPage';
+import { history } from 'app/history';
+import App from 'app/containers/App';
 import configureStore from 'store/configureStore';
-import { history } from './history';
-import App from './App';
-
+import LoadingPage from 'lib/components/LoadingPage';
+import 'app/app-styles';
 
 const { persistor, store } = configureStore();
 
